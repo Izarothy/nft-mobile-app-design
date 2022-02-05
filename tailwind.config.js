@@ -4,7 +4,15 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary-dark': '#101113',
+        'primary-violet': '#854BFE',
+      },
+    },
+    fontFamily: {
+      monumentExtended: ['Monument Extended', 'sans-serif'],
+    },
   },
   plugins: [],
 }
