@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Welcome = () => {
   return (
     <div className="relative h-screen overflow-x-hidden bg-primary-dark pt-8">
-      <h1 className="mx-4 text-[32px] font-bold text-white">
+      <h1 className="mx-4 text-[180%] font-bold text-white">
         Discover, collect and sell extraordinary NFTs
       </h1>
       <span className="absolute top-36 -right-4 z-10 mb-8 w-4/5">
