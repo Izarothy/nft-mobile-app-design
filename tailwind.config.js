@@ -12,6 +12,7 @@ module.exports = {
     },
     fontFamily: {
       monumentExtended: ['Monument Extended', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
   },
   plugins: [],

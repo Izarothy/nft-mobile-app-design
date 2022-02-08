@@ -16,6 +16,16 @@ export default function Document() {
           as="font"
           crossOrigin=""
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body className="min-h-screen font-monumentExtended text-white">
         <Main />
