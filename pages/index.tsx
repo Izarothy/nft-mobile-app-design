@@ -8,5 +8,5 @@ export default function Home() {
       ? setUserNew(false)
       : localStorage.setItem('userNew', 'true')
   }, [])
-  return userNew ? <Welcome /> : <Landing />
+  return userNew ? <Welcome setUserNew={setUserNew} /> : <Landing />
 }

@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Welcome = () => {
+interface Props {
+  setUserNew: (userNew: boolean) => void
+}
+const Welcome = ({ setUserNew }: Props) => {
   return (
     <div className="relative h-screen overflow-x-hidden bg-primary-dark pt-8">
       <h1 className="mx-4 text-[180%] font-bold text-white">
@@ -26,7 +29,10 @@ const Welcome = () => {
         />
       </span>
       <div className="flex w-full justify-center">
-        <button className="px-auto fixed bottom-2 z-20 mx-auto w-5/6 rounded-lg bg-primary-violet py-3 text-sm">
+        <button
+          className="px-auto fixed bottom-2 z-20 mx-auto w-5/6 rounded-lg bg-primary-violet py-3 text-sm"
+          onClick={() => setUserNew(false)}
+        >
           Let's Get Started
         </button>
       </div>
