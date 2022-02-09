@@ -11,8 +11,8 @@ const NFTGrid = () => {
       />
       <NFTCard
         name="Hologram hand left"
-        price={1.25}
-        image="/images/nft-1.png"
+        price={2.25}
+        image="/images/nft-2.jpg"
       />
       <NFTCard
         name="Hologram hand left"

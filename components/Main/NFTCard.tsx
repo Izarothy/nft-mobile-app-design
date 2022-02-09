@@ -9,11 +9,18 @@ type Props = {
 
 const NFTCard = ({ name, image, price }: Props) => {
   return (
-    <div className="mb-2 rounded-sm border border-white/10 bg-white/5 p-2">
-      <div>
-        <Image src={image} alt={name} width={160} height={195} />
+    <div className="mb-2 rounded-lg border border-white/10 bg-white/5 p-4">
+      <div className="w-full max-w-xl">
+        <Image
+          src={image}
+          alt={name}
+          width={150}
+          height={180}
+          layout="responsive"
+          objectFit="cover"
+        />
       </div>
-      <h3 className="mt-1">{name}</h3>
+      <h3 className="mt-4">{name}</h3>
       <div className="mt-3 flex justify-between">
         <span className="flex gap-2">
           {price}
