@@ -1,8 +1,12 @@
+import Image from 'next/image'
 import React from 'react'
 
 const UserProfile = () => {
   return (
-    <div className="text-center">
+    <div className="grid place-items-center text-center">
+      <span className="relative block h-24 w-24 rounded-full border-2 border-gray-700">
+        <Image src={'/images/user-avatar.png'} width={138} height={138} />
+      </span>
       <h1 className="text-2xl font-medium">Benjamin Ray</h1>
       <div className="mt-2 flex justify-center gap-2">
         <span>4.5</span>
