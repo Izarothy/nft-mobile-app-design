@@ -1,24 +1,18 @@
 import React from 'react'
 import NFTCard from './NFTCard'
+import data from '@/data/data.json'
 
+type CardType = {
+  name: string
+  price: number
+  path: string
+}
 const NFTGrid = () => {
   return (
     <div className="mt-4 grid grid-cols-2 gap-3">
-      <NFTCard
-        name="Hologram hand left"
-        price={1.25}
-        image="/images/nft-1.png"
-      />
-      <NFTCard
-        name="Hologram hand left"
-        price={2.25}
-        image="/images/nft-2.jpg"
-      />
-      <NFTCard
-        name="Hologram hand left"
-        price={1.25}
-        image="/images/nft-1.png"
-      />
+      {data.images.map((card: CardType) => {
+        return <NFTCard name={card.name} price={card.price} image={card.path} />
+      })}
     </div>
   )
 }

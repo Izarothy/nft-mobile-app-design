@@ -1,0 +1,14 @@
+{
+  "images": [
+    {
+      "name": "Hologram hand left",
+      "price": 1.25,
+      "path": "/images/nft-1.png"
+    },
+    {
+      "name": "Tezos",
+      "price": 1.55,
+      "path": "/images/nft-2.jpg"
+    }
+  ]
+}
