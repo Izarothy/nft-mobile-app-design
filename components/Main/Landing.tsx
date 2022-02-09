@@ -7,12 +7,17 @@ import UserProfile from './UserProfile'
 const Home = () => {
   return (
     <main className="flex min-h-screen flex-col bg-primary-dark font-poppins">
-      <Header />
-      <UserProfile />
-      <main className="p-2">
-        <SearchBox />
-        <NFTGrid />
-      </main>
+      <div className="md:hidden">
+        <Header />
+        <UserProfile />
+        <div className="p-2">
+          <SearchBox />
+          <NFTGrid />
+        </div>
+      </div>
+      <div className="hidden h-screen place-items-center md:grid">
+        This layout is only available for mobile
+      </div>
     </main>
   )
 }
