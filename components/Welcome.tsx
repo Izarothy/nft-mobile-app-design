@@ -7,7 +7,7 @@ interface Props {
 const Welcome = ({ setUserNew }: Props) => {
   return (
     <main className="h-screen overflow-x-hidden bg-primary-dark pt-8">
-      <div className="relative md:hidden">
+      <div className="relative h-full md:hidden">
         <h1 className="mx-4 text-[180%] font-bold text-white">
           Discover, collect and sell extraordinary NFTs
         </h1>
@@ -20,7 +20,7 @@ const Welcome = ({ setUserNew }: Props) => {
             quality="100"
           />
         </span>
-        <span className="absolute -bottom-28 w-4/5 ">
+        <span className="absolute bottom-0 w-4/5 ">
           <Image
             src="/images/welcome-2.png"
             width={370}
